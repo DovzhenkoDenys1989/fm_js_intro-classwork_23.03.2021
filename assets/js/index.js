@@ -1,16 +1,20 @@
 //const userInput = prompt("Enter the message: ");
 //alert(userInput);
 
-const myFirstFunc = function(){
-  console.log("1");
+const userInput1 = prompt("Enter number 1: ");
+const userInput2 = prompt("Enter number 2: ");
+
+
+const getSumOfTwo = function(val1, val2){
+  const result = Number(val1) + Number(val2);
+ // if (isNaN (result) ){
+  //  return null;
+ // }
+  //return result;
+  return isNaN(result) ? null : result;
 }
 
-function mySecondFunc(){
-  console.log("2");
-}
 
-myFirstFunc();
-mySecondFunc();
+const sum = getSumOfTwo(userInput1, userInput2);
+console.log(sum);
 
-//console.log(myFirstFunc);
-//console.log(mySecondFunc);
